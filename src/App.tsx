@@ -18,10 +18,17 @@ function App() {
     })
   })
   return (
-   <>
-   Hello world
-   </>
-   
+  <ul>
+    {repositories.map(repo=>{
+      return(
+        <li key={repo.full_name}>
+          <strong>{repo.full_name}</strong>
+          <p>{repo.description}</p>
+
+        </li>
+      )
+    })}
+  </ul>
   )
 }
 
