@@ -18,6 +18,7 @@ function App() {
     })
   })
   return (
+    /* percorrendo*/
   <ul>
     {repositories.map(repo=>{
       return(
